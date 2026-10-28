@@ -1,0 +1,78 @@
+﻿Issue Type,Summary,Description,Priority,Epic Name,Parent Epic,Labels,Requirement IDs
+Epic,Executive Backlog Visibility,Provide leadership with concise workload and aging visibility.,High,EP-01 Executive Backlog Visibility,,ba-portfolio;executive,BR-01; BR-02
+Epic,Workload Drivers & Geographic Analysis,Enable geographic and service-category backlog analysis.,High,EP-02 Workload Drivers & Geographic Analysis,,ba-portfolio;drivers,BR-03; BR-04
+Epic,Throughput & Trend Monitoring,"Monitor requests, dispositions, and net request flow over time.",High,EP-03 Throughput & Trend Monitoring,,ba-portfolio;throughput,BR-05
+Epic,Reporting Usability & Governance,"Support filtering, documentation, data-quality handling, and executive-to-detail navigation.",Medium,EP-04 Reporting Usability & Governance,,ba-portfolio;governance,BR-06; BR-08
+Epic,Exception Pattern Monitoring,Monitor duplicate and referral patterns using clearly governed definitions and interpretation boundaries.,Medium,EP-05 Exception Pattern Monitoring,,ba-portfolio;exceptions;governance,BR-09
+Story,View total service-request workload,"As an operations leader, I want a concise view of total service-request workload so that I can understand the overall scale of activity before drilling into specific problem areas.
+
+Acceptance Criteria:
+- Total Requests KPI is visible for the active filter context.
+- With no filters, the KPI reflects the full modeled request population.
+- Supported filters update the KPI consistently.",High,,EP-01 Executive Backlog Visibility,ba-portfolio;US-01,BR-01; FR-02
+Story,Identify open backlog aged 90 days or more,"As an operations leader, I want to see how many open requests have aged 90 days or more so that I can identify long-open work that may warrant attention.
+
+Acceptance Criteria:
+- Only currently open requests aged at least 90 days are counted.
+- The KPI is visible on the executive view.
+- Filters recalculate the KPI.
+- Documentation labels 90 days as a portfolio monitoring indicator, not an official City SLA.",High,,EP-01 Executive Backlog Visibility,ba-portfolio;US-02,BR-02; FR-03
+Story,Compare open backlog by council district,"As a manager, I want to compare open backlog across council districts so that I can identify geographic concentrations for further investigation.
+
+Acceptance Criteria:
+- Open backlog is grouped by council district.
+- Relative concentrations are visually identifiable.
+- Selecting a district updates applicable KPIs and visuals.",High,,EP-02 Workload Drivers & Geographic Analysis,ba-portfolio;US-03,BR-03; FR-04
+Story,Identify backlog drivers by service type,"As a department manager, I want to compare backlog by service type so that I can identify service categories contributing most to unresolved workload.
+
+Acceptance Criteria:
+- Open backlog is grouped by service type.
+- Largest contributors are visually identifiable.
+- Selecting a category updates applicable KPIs and visuals.
+- Recommendations use investigation language rather than unsupported causal claims.",High,,EP-02 Workload Drivers & Geographic Analysis,ba-portfolio;US-04,BR-04; FR-05
+Story,Compare monthly requests and dispositions,"As an operations leader, I want to compare monthly requests and dispositions so that I can see whether incoming demand and closures are moving in balance.
+
+Acceptance Criteria:
+- Both measures appear on the same time axis.
+- A selected month can show which measure was higher.
+- Both series use the same filter context.",High,,EP-03 Throughput & Trend Monitoring,ba-portfolio;US-05,BR-05; FR-06
+Story,Monitor monthly net request flow,"As an operations analyst, I want to view monthly net request flow so that I can identify periods when observed intake exceeds dispositions or vice versa.
+
+Acceptance Criteria:
+- Net flow equals Requests minus Dispositions for the same month/filter context.
+- Positive and negative months are interpretable using that definition.",High,,EP-03 Throughput & Trend Monitoring,ba-portfolio;US-06,BR-05; FR-07
+Story,Filter the report by operational dimensions,"As a dashboard user, I want filters to update relevant KPIs and visuals consistently so that I can focus on a specific district, service type, or time period without rebuilding the analysis.
+
+Acceptance Criteria:
+- Supported filters update applicable KPIs/visuals.
+- Combined filters are honored.
+- Clearing filters restores the base view.
+- Empty contexts do not present misleading values.",Medium,,EP-04 Reporting Usability & Governance,ba-portfolio;US-07,BR-06; FR-08; FR-09
+Story,Document metric definitions and assumptions,"As an analyst, I want metric definitions, assumptions, and limitations documented so that I can interpret results consistently and explain them to stakeholders.
+
+Acceptance Criteria:
+- Core measures are defined in plain language.
+- Requirements are traceable to stories, capabilities, and UAT.
+- Simulated assumptions are labeled.
+- Official public-source URLs are provided.",High,,EP-04 Reporting Usability & Governance,ba-portfolio;US-08,BR-08; NFR-02
+Story,Preserve blank categories as Unknown,"As an analyst, I want blank categorical values represented explicitly as Unknown so that missing categories are visible rather than silently excluded.
+
+Acceptance Criteria:
+- Blank values transform to Unknown.
+- Unknown remains filterable/groupable.
+- The transformation is reproducible on refresh.",Medium,,EP-04 Reporting Usability & Governance,ba-portfolio;US-09,FR-10
+Story,Navigate from executive overview to deeper analysis,"As a reviewer, I want both an executive overview and a deeper analysis view so that I can move from high-level signals to supporting detail efficiently.
+
+Acceptance Criteria:
+- Core KPIs and major drivers are visible on the executive page.
+- Deeper monthly flow analysis is available.
+- Pages use consistent model/filter logic.
+- Labels are understandable without specialized DAX knowledge.",Medium,,EP-04 Reporting Usability & Governance,ba-portfolio;US-10,FR-12; NFR-01
+Story,Monitor duplicate and referral patterns,"As an operations analyst, I want to monitor duplicate and referral rates so that repeated reporting and workflow exits can be identified without confusing them with confirmed physical resolution.
+
+Acceptance Criteria:
+- Duplicate Requests uses the documented parent-request relationship.
+- Duplicate Rate is visible and responds to supported filter context.
+- Referred Requests and Referral Rate are visible using the documented status/indicator logic.
+- Referral is described as a workflow exit/transfer rather than proof that the physical issue was resolved.
+- Duplicate and referral definitions are documented in the KPI/data dictionary.",Medium,,EP-05 Exception Pattern Monitoring,ba-portfolio;US-11;exceptions,BR-09; FR-13; FR-14
