@@ -47,20 +47,7 @@ Operational decision-makers need a consolidated, consistently defined view of re
 
 ## 2. Business Analysis Approach
 
-```mermaid
-flowchart LR
-    A[Problem & Scope] --> B[Stakeholders]
-    B --> C[Current State]
-    C --> D[Gap Analysis]
-    D --> E[Requirements]
-    E --> F[Prioritization]
-    F --> G[Stories & Acceptance Criteria]
-    G --> H[Future State]
-    H --> I[Implemented Power BI Solution]
-    I --> J[Traceability & Verification]
-    J --> K[UAT Plan]
-    K --> L[Recommendations & Change Considerations]
-```
+![Business Analysis Approach](images/business-analysis-approach.png)
 
 Because the Power BI solution existed before this portfolio extension, the BA documentation is intentionally **retrospective**. Requirements are labeled as reconstructed or proposed rather than falsely represented as stakeholder-approved pre-development requirements.
 

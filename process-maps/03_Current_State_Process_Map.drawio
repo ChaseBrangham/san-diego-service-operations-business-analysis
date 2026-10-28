@@ -32,10 +32,10 @@
         <mxCell id="route" value="Route to staff /&lt;br&gt;service area" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#26344A;strokeWidth=2;strokeColor=#7186A4;" vertex="1" parent="1">
           <mxGeometry x="305" y="182.5" width="105" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="referred" value="Referred / Duplicate /&lt;br&gt;Other Disposition" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFF3F0;fontColor=#26344A;strokeColor=#C76E60;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="referred" value="Referred / Other&lt;br&gt;Disposition" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFF3F0;fontColor=#26344A;strokeColor=#C76E60;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="440" y="165" width="140" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="progress" value="Status: In Progress" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#26344A;strokeWidth=2;strokeColor=#7186A4;" vertex="1" parent="1">
+        <mxCell id="progress" value="Status: In Process" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#26344A;strokeWidth=2;strokeColor=#7186A4;" vertex="1" parent="1">
           <mxGeometry x="470" y="198" width="102" height="30" as="geometry" />
         </mxCell>
         <mxCell id="closed" value="Status: Closed" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#26344A;strokeWidth=2;strokeColor=#7186A4;" vertex="1" parent="1">

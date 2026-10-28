@@ -131,13 +131,13 @@ Referral Rate
 
 The Executive Overview provides leadership-level visibility into workload, backlog severity, high-volume service categories, and monthly operational throughput.
 
-![Executive Overview](images/executive-overview.png)
+![Executive Overview](https://raw.githubusercontent.com/ChaseBrangham/san-diego-service-operations/main/images/executive-overview.png)
 
 ### Backlog & Process Analysis
 
 The second page provides deeper analysis of backlog aging, geographic concentration, monthly net request flow, referral activity, and duplicate-reporting patterns.
 
-![Backlog & Process Analysis](images/backlog-process-analysis.png)
+![Backlog & Process Analysis](https://raw.githubusercontent.com/ChaseBrangham/san-diego-service-operations/main/images/backlog-process-analysis.png)
 
 ## Key Findings
 
